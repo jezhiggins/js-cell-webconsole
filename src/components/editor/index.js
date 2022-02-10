@@ -1,9 +1,8 @@
-import {useState} from "preact/hooks";
 import style from './style.css'
+import {useContext} from "preact/compat";
 
-const Editor = () => {
-  const [cell, setCell] = useState("");
-
+const Editor = ({ code }) => {
+  const { cell, setCell } = useContext(code)
   return (
     <div class={style.editor}>
       <textarea
