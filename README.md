@@ -1,5 +1,7 @@
 # jscell-web-console
 
+A web console for playing with [Cell](https://github.com/jezhiggins/js-cell-lang)
+
 ## CLI Commands
 
 ``` bash
