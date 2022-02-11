@@ -15,7 +15,7 @@ const parser = code => {
 
 const AstViewer = ({ code }) => {
   return (
-    <Viewer code={code} transform={parser}/>
+    <Viewer code={code} transform={parser} title="AST"/>
   )
 };
 

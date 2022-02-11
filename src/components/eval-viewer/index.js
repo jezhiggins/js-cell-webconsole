@@ -3,9 +3,17 @@ import Viewer from "../viewer";
 import {parse} from "cell-lang/lib/parser";
 import {evaluate} from "cell-lang/lib/evaluator";
 
+const allParse = code => {
+  try {
+    return [...parse(lex(code))];
+  } catch (e) {
+    return []
+  }
+}
+
 const evaluator = code => {
   try {
-    return evaluate(parse(lex(code)));
+    return evaluate(allParse(code));
   } catch(e) {
     return e.message
   }
@@ -13,7 +21,7 @@ const evaluator = code => {
 
 const EvalViewer = ({ code }) => {
   return (
-    <Viewer code={code} transform={evaluator}/>
+    <Viewer code={code} transform={evaluator} title="Evaluation"/>
   )
 };
 

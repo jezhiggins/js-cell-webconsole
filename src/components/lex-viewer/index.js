@@ -10,7 +10,7 @@ const lexer = code => {
 
 const LexViewer = ({ code }) => {
   return (
-    <Viewer code={code} transform={lexer}/>
+    <Viewer code={code} transform={lexer} title="Lex"/>
   )
 };
 
