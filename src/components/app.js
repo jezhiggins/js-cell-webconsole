@@ -5,10 +5,9 @@ import {useState} from "preact/hooks";
 import Header from './header';
 
 // Code-splitting is automated for `routes` directory
-import Home from '../routes/home';
-import Profile from '../routes/profile';
+
 import Editor from './editor'
-import Viewer from './viewer'
+import LexViewer from './lex-viewer'
 
 const Code = createContext('')
 
@@ -19,7 +18,7 @@ const App = () => {
 			<Header />
 			<Code.Provider value={{ cell, setCell }}>
 				<Editor code={Code}/>
-				<Viewer code={Code}/>
+				<LexViewer code={Code}/>
 			</Code.Provider>
 		</div>
 	)
