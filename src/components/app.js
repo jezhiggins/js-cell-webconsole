@@ -8,6 +8,7 @@ import Header from './header';
 
 import Editor from './editor'
 import LexViewer from './lex-viewer'
+import AstViewer from "./ast-viewer";
 
 const Code = createContext('')
 
@@ -19,6 +20,7 @@ const App = () => {
 			<Code.Provider value={{ cell, setCell }}>
 				<Editor code={Code}/>
 				<LexViewer code={Code}/>
+        <AstViewer code={Code}/>
 			</Code.Provider>
 		</div>
 	)
