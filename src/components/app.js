@@ -9,6 +9,7 @@ import Header from './header';
 import Editor from './editor'
 import LexViewer from './lex-viewer'
 import AstViewer from "./ast-viewer";
+import EvalViewer from "./eval-viewer";
 
 const Code = createContext('')
 
@@ -21,6 +22,7 @@ const App = () => {
 				<Editor code={Code}/>
 				<LexViewer code={Code}/>
         <AstViewer code={Code}/>
+        <EvalViewer code={Code}/>
 			</Code.Provider>
 		</div>
 	)
