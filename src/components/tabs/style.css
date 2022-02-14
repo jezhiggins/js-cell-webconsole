@@ -1,0 +1,66 @@
+.tabPanel {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: #eee;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+a:active, a:hover {
+    outline: 0;
+}
+
+.navTabs {
+    border-bottom: 1px solid #dee2e6;
+}
+.navTabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.navTabs > li > a:hover {
+    border-color: #eee #eee #ddd;
+}
+.navTabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+
+.tabContent {
+    flex-grow: 1
+}
+
+.tabPane {
+    height: 100%;
+    margin: 10px;
+}
+
+.tabContent > .tabPane {
+    display: none;
+}
+.tabContent > .active {
+    display: block;
+}

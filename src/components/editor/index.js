@@ -6,8 +6,8 @@ const Editor = ({ code }) => {
   return (
     <div class={style.editor}>
       <textarea
+        class={style.textbox}
         rows='20'
-        cols='80'
         autoComplete='off'
         placeholder='Type your Cell code here'
         onChange={e => setCell(e.target.value)}

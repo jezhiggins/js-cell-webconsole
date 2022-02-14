@@ -1,15 +1,13 @@
 import style from './style.css'
 import {useContext} from "preact/compat";
 
-const Viewer = ({ code, transform, title }) => {
+const Viewer = ({ code, transform }) => {
   const { cell } = useContext(code)
 
   return (
-    <div class={style.editor}>
-      <h2>{title}</h2>
+    <div class={style.viewer}>
       <textarea
-        rows='10'
-        cols='80'
+        class={style.viewer}
         readOnly='true'
         autoComplete='off'
         value={transform(cell)}

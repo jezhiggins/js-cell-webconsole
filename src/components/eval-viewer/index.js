@@ -18,11 +18,11 @@ function webPrintFn(env, value) {
   return ['none', null]
 }
 
-const env = topLevelEnvironment().newScope();
-env.set("print", ['native', webPrintFn]);
-
 const evalCell = code => {
   try {
+    const env = topLevelEnvironment().newScope();
+    env.set("print", ['native', webPrintFn]);
+
     return evaluate(allParse(code), env);
   } catch(e) {
     return e.message

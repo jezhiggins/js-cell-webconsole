@@ -1,0 +1,14 @@
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.main {
+    flex: 5;
+}
+
+.sidebar {
+    flex: 2;
+    border-left: 1px solid #dee2e6;
+    padding-left: 10px;
+}
