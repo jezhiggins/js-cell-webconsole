@@ -1,0 +1,184 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #FAFAFA;
+	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-weight: 400;
+	color: #444;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#app {
+	height: 100%;
+}
+
+.header__OVZyn {
+	width: 100%;
+	height: 56px;
+	padding: 0;
+	background: #673AB7;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	z-index: 50;
+}
+
+.header__OVZyn h1 {
+	float: left;
+	margin: 0;
+	padding: 0 15px;
+	font-size: 24px;
+	line-height: 56px;
+	font-weight: 400;
+	color: #FFF;
+}
+
+.header__OVZyn nav {
+	float: right;
+	font-size: 100%;
+}
+
+.header__OVZyn nav a {
+	display: inline-block;
+	height: 56px;
+	line-height: 56px;
+	padding: 0 15px;
+	min-width: 50px;
+	text-align: center;
+	background: rgba(255,255,255,0);
+	text-decoration: none;
+	color: #FFF;
+	will-change: background-color;
+}
+
+.header__OVZyn nav a:hover,
+.header__OVZyn nav a:active {
+	background: rgba(0,0,0,0.2);
+}
+
+.header__OVZyn nav a.active__r\+Z6z {
+	background: rgba(0,0,0,0.4);
+}
+
+.editor__wdfBO {
+	width: 100%;
+	padding: 10px;
+}
+
+.textbox__2x8y- {
+	width: inherit;
+	height: inherit;
+}
+
+.viewer__EHjvl {
+	width: 100%;
+	padding: 10px;
+	height: inherit;
+}
+
+.textbox__y8XSa {
+	width: inherit;
+	height: inherit;
+}
+
+body {
+    font-size: larger;
+}
+
+.container__yfkJX {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.main__zxNhf {
+    -ms-flex: 5;
+        flex: 5;
+}
+
+.sidebar__z2Kl5 {
+    -ms-flex: 2;
+        flex: 2;
+    border-left: 1px solid #dee2e6;
+    padding-left: 10px;
+}
+
+.tabPanel__EXZnp {
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+        flex-flow: column;
+}
+
+.nav__X-1Yv {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav__X-1Yv > li > a:focus, .nav__X-1Yv > li > a:hover {
+    text-decoration: none;
+    background-color: #eee;
+}
+
+.nav__X-1Yv > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+a:active, a:hover {
+    outline: 0;
+}
+
+.navTabs__tINIe {
+    border-bottom: 1px solid #dee2e6;
+}
+.navTabs__tINIe > li.active__f402D > a, .nav-tabs__Z43rs > li.active__f402D > a:focus, .nav-tabs__Z43rs > li.active__f402D > a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.navTabs__tINIe > li > a:hover {
+    border-color: #eee #eee #ddd;
+}
+.navTabs__tINIe > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+
+.tabContent__EWT1F {
+    -ms-flex-positive: 1;
+        flex-grow: 1
+}
+
+.tabPane__zG83p {
+    height: 100%;
+    margin: 10px;
+}
+
+.tabContent__EWT1F > .tabPane__zG83p {
+    display: none;
+}
+.tabContent__EWT1F > .active__f402D {
+    display: block;
+}
+
+
+/*# sourceMappingURL=ssr-bundle.c0ce0.css.map*/
