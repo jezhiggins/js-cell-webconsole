@@ -1,7 +1,7 @@
 {
   "name": "jscell-web-console",
   "short_name": "jscell-web-console",
-  "start_url": "/",
+  "start_url": ".",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
